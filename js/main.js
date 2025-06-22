@@ -47,6 +47,8 @@ function resetSignForm()
 
 // ====================================================================
 // Create user 
+try
+{
 signForm.addEventListener('submit', function(e)
 {
     e.preventDefault();
@@ -68,10 +70,16 @@ signForm.addEventListener('submit', function(e)
     {
         window.alert('enter valid data');
     }
-})
+})}
+catch(error)
+{
+    console.log(error)
+}
 
 // ====================================================================
 // validation
+try
+{
 signForm.addEventListener('keyup' ,validateInput)
 function validateInput(e)
 {
@@ -89,6 +97,21 @@ function validateInput(e)
         e.target.classList.add("is-invalid");
         couldSign[e.target.name] = false;
     }
+}}
+catch(error)
+{
+    console.log(error)
 }
+
+//====================================================================
+// home page user check
+
 console.log("hello")
-console.log(window.location.href);
+console.log(window.location.href.split('/')[window.location.href.split('/').length-1]);
+if(window.location.href.split('/')[window.location.href.split('/').length-1]=== 'home.html')
+{
+    if(!localStorage.getItem('username'))
+    {
+        window.location.href = 'index.html'
+    }
+}
