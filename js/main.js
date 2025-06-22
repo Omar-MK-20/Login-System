@@ -17,6 +17,7 @@ var couldSign = {
 
 var emailLogin = document.querySelector("#emailLogin");
 var passwordLogin = document.querySelector("#passwordLogin");
+var loginForm = document.querySelector('#loginForm');
 
 
 // ====================================================================
@@ -105,7 +106,7 @@ catch(error)
 
 //====================================================================
 // home page user check
-
+var username = document.querySelector('#username');
 console.log("hello")
 console.log(window.location.href.split('/')[window.location.href.split('/').length-1]);
 if(window.location.href.split('/')[window.location.href.split('/').length-1]=== 'home.html')
@@ -114,4 +115,31 @@ if(window.location.href.split('/')[window.location.href.split('/').length-1]=== 
     {
         window.location.href = 'index.html'
     }
+    else
+    {
+        username.innerHTML = `Welcome ${localStorage.getItem('username')}`
+    }
+}
+
+//====================================================================
+// login function
+try
+{
+    loginForm.addEventListener('submit', function(e)
+    {
+        e.preventDefault
+        for (var user of users) 
+        {
+            if(user.email === emailLogin.value &&
+                user.password === passwordLogin
+            )
+            {
+                window.location.href = 'home.index';
+            }
+        }
+    })
+}
+catch(error)
+{
+    console.log(error);
 }
