@@ -1,7 +1,7 @@
 # Smart Login System
 
 A simple front-end login and signup system built with HTML, CSS (Bootstrap), and JavaScript. This project demonstrates basic user authentication using browser localStorage, form validation, and responsive design.
-- Live Demo[https://omar-mk-20.github.io/Login-System/]
+- Live Demo [https://omar-mk-20.github.io/Login-System/]
 
 ## Features
 - **Sign Up**: Users can create an account with name, email, and password. Input validation is enforced.
