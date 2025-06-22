@@ -16,10 +16,10 @@
     
     <section class="card ShadowCard my-5 mx-auto text-center p-5">
         <h1 class="">Smart Login System</h1>
-        <form>
-            <input type="text" name="nameSign" id="nameSign" placeholder="Enter your name" class="form-control bg-transparent w-80 mx-auto mt-2">
-            <input type="email" name="emailSign" id="emailSign" placeholder="Enter your email" class="form-control bg-transparent w-80 mx-auto mt-3">
-            <input type="password" name="passwordSign" id="passwordSign" placeholder="Enter password" class="form-control bg-transparent w-80 mx-auto my-3">
+        <form id="signForm">
+            <input autocomplete="username" type="text" name="nameSign" id="nameSign" placeholder="Enter your name" class="form-control bg-transparent w-80 mx-auto mt-2">
+            <input autocomplete="email" type="email" name="emailSign" id="emailSign" placeholder="Enter your email" class="form-control bg-transparent w-80 mx-auto mt-3">
+            <input autocomplete="new-password" type="password" name="passwordSign" id="passwordSign" placeholder="Enter password" class="form-control bg-transparent w-80 mx-auto my-3">
             <button type="submit" class="btn btn-outline-info w-80 mx-auto my-3">Sign Up</button>
             <span class="d-block">You have an account? <a href="index.html">Signin</a></span>
         </form>
