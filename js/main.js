@@ -61,11 +61,12 @@ signForm.addEventListener('submit', function(e)
             password: passwordSign.value,
         });
         localStorage.setItem('users',JSON.stringify(users));
-        resetSignForm()
+        resetSignForm();
+        window.location.href = "index.html"
     }
     else
     {
-        
+        window.alert('enter valid data');
     }
 })
 
@@ -89,4 +90,5 @@ function validateInput(e)
         couldSign[e.target.name] = false;
     }
 }
-
+console.log("hello")
+console.log(window.location.href);
