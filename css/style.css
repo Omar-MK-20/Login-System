@@ -27,6 +27,10 @@ h1 {
     box-shadow: none !important;
 }
 
+input {
+    color: white !important;
+}
+
 input::placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
 }
@@ -39,8 +43,8 @@ input::placeholder {
     --bs-btn-hover-border-color: rgb(23,162,184);
     --bs-btn-focus-shadow-rgb: 13, 202, 240;
     --bs-btn-active-color: #ffffff;
-    --bs-btn-active-bg: rgb(23,162,184);
-    --bs-btn-active-border-color: rgb(23,162,184);
+    --bs-btn-active-bg: rgb(12, 96, 109);
+    --bs-btn-active-border-color: rgb(12, 96, 109);
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     --bs-btn-disabled-color: rgb(23,162,184);
     --bs-btn-disabled-bg: transparent;
