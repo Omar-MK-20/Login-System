@@ -69,3 +69,11 @@ a:hover {
 .ShadowCard {
     box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.5);
 }
+
+.modal {
+    --bs-modal-bg: rgb(36, 53, 63);
+}
+
+.modal-content {
+    color: #ffffff;
+}
