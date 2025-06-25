@@ -22,6 +22,7 @@ var btnLogout = document.querySelector('#btnLogout');
 var emailLogin = document.querySelector("#emailLogin");
 var passwordLogin = document.querySelector("#passwordLogin");
 var loginForm = document.querySelector('#loginForm');
+var btnLogin = document.querySelector('#btnLogin')
 
 
 // ====================================================================
@@ -165,6 +166,10 @@ try
                 console.log(user);
             }
         }
+        // btnLogin.dataset.bsToggle = "modal"
+        // // btnLogin.dataset.bsTarget = "#exampleModal1"
+        // console.log();
+        
     })
 }
 catch(error)
